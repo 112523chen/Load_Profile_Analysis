@@ -1,5 +1,22 @@
 # Load Profile Analysis Tool
 
+## Setup for V3
+
+- Download openpyxl library if needed
+- Download pandas library if needed
+
+## Instructions for V3
+
+1. Create a folder with all your inputs/Excel files
+
+2. Move the folder to same level of directory as ``EnrTracV3.py``
+
+3. Get to same level of directory as ``EnrTracV3.py`` and your folder on your command line or terminal
+
+4. Enter ``python3 EnrTracV3.py (your folder name here)`` into your machine and hit enter
+
+-----
+
 ## Setup for V2A
 
 - Download openpyxl library if needed
@@ -18,20 +35,3 @@
 4. Run python file/script
 
 5. Extract file with the name ***peak_reports***
-
----
-
-## Setup for V3
-
-- Download openpyxl library if needed
-- Download pandas library if needed
-
-## Instructions for V3
-
-1. Create a folder with all your inputs/Excel files
-
-2. Move the folder to same level of directory as ``EnrTracV3.py``
-
-3. Get to same level of directory as ``EnrTracV3.py`` and your folder on your command line or terminal
-
-4. Enter ``python3 EnrTracV3.py (your folder name here)`` into your machine and hit enter
