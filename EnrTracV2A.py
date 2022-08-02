@@ -82,16 +82,16 @@ for point in points:
     data = df[(df.year == point[0]) & (df.month ==  point[1]) & (df.total ==  point[2])]
 
     date = f"Date:{data.month.values[0]}-{data.day.values[0]}-{data.year.values[0]}\n"
-    energy = f"Energy Consumption: {data.total.values[0]}Kwh\n"
+    energy = f"Energy Consumption: {data.total.values[0]}Kw\n"
     temps = f"Weather Data:\nDry-Bulb (F): {data['Dry-Bulb F'].values[0]}\nWet-Bulb (F): {data['Wet-Bulb F'].values[0]}\nDew-Point (F): {data['Dew-Point F'].values[0]}\n"
 
     if((os.path.exists("./peak_reports")) == False):
         os.mkdir("peak_reports")
     os.chdir("./peak_reports/")
     os.mkdir(
-        f"{data.year.values[0]}-{data.month.values[0]}-{data.day.values[0]}_{data.total.values[0]}Kwh")
+        f"{data.year.values[0]}-{data.month.values[0]}-{data.day.values[0]}_{data.total.values[0]}Kw")
     os.chdir(
-        f"./{data.year.values[0]}-{data.month.values[0]}-{data.day.values[0]}_{data.total.values[0]}Kwh")
+        f"./{data.year.values[0]}-{data.month.values[0]}-{data.day.values[0]}_{data.total.values[0]}Kw")
     info = (f"{date}\n{energy}\n{temps}")
     f = open("report.txt", "a")
     f.write(info)
