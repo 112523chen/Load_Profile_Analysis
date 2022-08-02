@@ -13,7 +13,7 @@
 
 3. Get to same level of directory as ``EnrTracV3.py`` and your folder on your command line or terminal
 
-4. Enter ``python3 EnrTracV3.py (your folder name here)`` into your machine and hit enter
+4. Enter ``python3 EnrTracV3.py (your folder name goes here)`` into your machine and hit enter
 
 -----
 
