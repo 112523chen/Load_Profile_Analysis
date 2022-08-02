@@ -2,6 +2,7 @@ from openpyxl.utils.dataframe import dataframe_to_rows
 from openpyxl import load_workbook, Workbook
 import pandas as pd
 import os
+import sys
 
 
 def get_college_info(path):
@@ -104,7 +105,9 @@ page.append(headers)
 
 #finds file in a director and gets data
 d = dict()
-root = "inputs"
+# root = "inputs"
+root = list((sys.argv))[1]
+
 for f in os.listdir(root):
     
     if(f == ".DS_Store"):
