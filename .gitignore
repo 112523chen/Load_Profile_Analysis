@@ -1,4 +1,4 @@
 *.xlsx
-.peak_reports
+peak_reports
 .vscode
 .DS_Store
