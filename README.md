@@ -1,5 +1,12 @@
 # Load Profile Analysis Tool
 
+## Setup
+
+- Download openpyxl library if needed
+- Download operator library if needed
+- Download collections library if needed
+- Download pandas library if needed
+
 ## Instructions for V2A
 
 1. Download excel file with temperatures included
