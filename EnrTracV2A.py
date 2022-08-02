@@ -89,9 +89,9 @@ for point in points:
         os.mkdir("peak_reports")
     os.chdir("./peak_reports/")
     os.mkdir(
-        f"{data.month.values[0]}-{data.day.values[0]}-{data.year.values[0]}_{data.total.values[0]}Kwh")
+        f"{data.year.values[0]}-{data.month.values[0]}-{data.day.values[0]}_{data.total.values[0]}Kwh")
     os.chdir(
-        f"./{data.month.values[0]}-{data.day.values[0]}-{data.year.values[0]}_{data.total.values[0]}Kwh")
+        f"./{data.year.values[0]}-{data.month.values[0]}-{data.day.values[0]}_{data.total.values[0]}Kwh")
     info = (f"{date}\n{energy}\n{temps}")
     f = open("report.txt", "a")
     f.write(info)
