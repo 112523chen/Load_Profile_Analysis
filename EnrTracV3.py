@@ -127,3 +127,4 @@ for college in list(d.keys()):
         page.append(point)
 
 wb.save(filename=workbook_name)
+print(f"{workbook_name} has been created")
