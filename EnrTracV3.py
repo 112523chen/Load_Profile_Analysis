@@ -24,7 +24,7 @@ def get_account_info(path):
     row = [r.split(" - ")[1] for r in row]
     if(len(set(row)) != 1):
         raise Exception(
-            f"In file {path.split('/')[1]} multiple accounts exists. \nPlease make sure the file in {path.split('/')[1]} only contains one account")
+            f"In file {path.split('/')[1]} multiple accounts exists. \nPlease make sure the file only contains one account")
     return list(set(row))[0]
 
 
